@@ -40,7 +40,7 @@ header nav ul li{
 
 .containerOne {
     /* width: auto; */
-    width: 500px;
+    width: 50%;
     height: 400px;
     float: left;
     background-color: white;
@@ -48,7 +48,7 @@ header nav ul li{
 }
 
 .containerTwo {
-    width: 500px;
+    width: 50%;
     height: 400px;
     float: right;
     background-color: white;
