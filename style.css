@@ -2,6 +2,7 @@
     margin: 0px;
     /* padding: 0px; */
 }
+
 body{
     background-color: #F9F9F9;
     /* margin: 0px; */
@@ -15,6 +16,7 @@ header{
 header h1{
     background-color: #800080;
     color: white;
+    padding-left: 20px;
 }
 
 header nav ul{
@@ -57,6 +59,7 @@ header nav ul li{
 .containerOne h3{
     font-family: 'Helvetica';
     padding: 10px;
+    font-size: 1rem;
 }
 
 .containerTwo{
@@ -83,19 +86,20 @@ footer{
     height: 100px;
 }
 
-footer p{
+.ftDtl{
     color: white;
+    top: 20px;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px){
     .row {   
       flex-direction: column;
     }
 }
   
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px){
     .navbar a {
       float: none;
       width: 100%;
