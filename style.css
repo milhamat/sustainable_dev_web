@@ -2,11 +2,11 @@
     margin: 0px;
     /* padding: 0px; */
 }
-body {
+body{
     background-color: #F9F9F9;
 }
 
-header {
+header{
     padding: 1px;
     background-color: #5B005C;
 }
@@ -28,7 +28,7 @@ header nav ul li{
     padding-left: 5px;
 }
 
-.logoContainer {
+.logoContainer{
     background-color: white;
     padding: 10px 0;
 }
@@ -38,21 +38,28 @@ header nav ul li{
     justify-content: center;
 }
 
-.containerOne {
+.containerOne{
     /* width: auto; */
     width: 50%;
     height: 400px;
     float: left;
     background-color: white;
-    margin: 10px;
+    margin: 20px;
 }
 
-.containerTwo {
+.containerTwo{
     width: 50%;
     height: 400px;
     float: right;
     background-color: white;
-    margin: 10px
+    margin: 20px
+}
+
+.sectionTwo{
+    width: auto;
+    height: 500px;
+    background-color: white;
+    margin: 0px 20px 20px 20px; /*top right left bottom*/
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -60,12 +67,12 @@ header nav ul li{
     .row {   
       flex-direction: column;
     }
-  }
+}
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
     .navbar a {
       float: none;
       width: 100%;
     }
-  }
+}
