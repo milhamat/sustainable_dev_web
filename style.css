@@ -34,6 +34,11 @@ header nav ul li{
     padding: 10px 0;
 }
 
+#logo{
+    height: 90px;
+    width: 300px;
+}
+
 .sectionOne{
     display: flex;
     justify-content: center;
@@ -41,17 +46,22 @@ header nav ul li{
 
 .containerOne{
     /* width: auto; */
-    width: 50%;
-    height: 400px;
+    width: 40%;
+    height: 500px;
     float: left;
     background-color: white;
     margin: 20px;
     margin-right: 10px;
 }
 
+.containerOne h3{
+    font-family: 'Helvetica';
+    padding: 10px;
+}
+
 .containerTwo{
-    width: 50%;
-    height: 400px;
+    width: 60%;
+    height: 500px;
     float: right;
     background-color: white;
     margin: 20px;
@@ -69,6 +79,7 @@ footer{
     line-height: 30px;
     text-align: center;
     background-color: #800080;
+    vertical-align: bottom;
     height: 100px;
 }
 
