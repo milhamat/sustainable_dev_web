@@ -48,7 +48,7 @@ header nav ul li{
 
 .containerOne{
     /* width: auto; */
-    width: 40%;
+    width: 35%;
     height: 500px;
     float: left;
     background-color: white;
@@ -66,8 +66,14 @@ header nav ul li{
     padding-left: 10px;
 }
 
+#snbrts{
+    height: 400px;
+    width: 400px;
+    padding-left: 10%;
+}
+
 .containerTwo{
-    width: 60%;
+    width: 65%;
     height: 500px;
     float: right;
     background-color: white;

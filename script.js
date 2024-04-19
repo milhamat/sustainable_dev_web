@@ -1,74 +1,161 @@
-// var acd_sys = ['博士班', '多元專長', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', 
-//                '日二技', '日二技', '日五專', '日五專', '日五專', '日五專', '日五專', '日五專', '日五專', '日四技', '日四技', '日四技', '日四技', 
-//                '日四技', '日四技', '日四技', '日四技', '日四技', '日四技', '碩士在職專班', '碩士在職專班', '碩士班', '碩士班', '碩士班', '碩士班', 
-//                '碩士班', '碩士班', '碩士班', '碩士班', '碩士班', '碩士班', '進二專', '進二專', '進二技', '進二技', '進二技', '進二技', '進二技', 
-//                '進二技', '進四技', '進四技', '進四技', '進四技', '進四技', '進四技']
-// var dept = ['財經學院博士班', '多元專長培力課程', '二技企管', '二技創科', '二技商務', '二技商設', '二技應外', '二技數媒', '二技會資', 
-//             '二技菁英', '二技財稅', '二技財金', '二技資管', '五專企管', '五專國貿', '五專應外', '五專會計與資料科學科', '五專財稅', 
-//             '五專財金', '五專資管', '四技企管', '四技創科', '四技商務', '四技商設', '四技應外', '四技數媒', '四技會資', '四技財稅', 
-//             '四技財金', '四技資管', '企業管理系EMBA在職專班', '境外碩士在職班(春季)', '企業管理系碩士班', '創研所', '國際商務系碩士班', 
-//             '會計財稅碩士班', '會計資訊系碩士班', '財務金融系碩士班', '財政稅務系碩士班', '貿易實務法律暨談判碩士學位學程', '資研所', 
-//             '資訊管理系人工智慧與商業應用碩士', '進二專企管', '進二專外語', '進二技企管', '進二技應外', '進二技會資', '進二技財稅', 
-//             '進二技財金', '進二技資管', '進四技企管', '進四技商務', '進四技數媒', '進四技會資', '進四技財金', '進四技資管']
-// var cnt = [2, 2, 63, 57, 65, 85, 56, 2, 63, 8, 63, 72, 63, 100, 92, 88, 102, 75, 96, 67, 223, 78, 203, 95, 
-//            72, 100, 189, 162, 89, 65, 41, 1, 27, 29, 29, 9, 18, 26, 15, 13, 17, 8, 223, 36, 216, 149, 87, 
-//            86, 93, 137, 72, 58, 56, 58, 56, 107]
 
-// var data = [{
-//     type: "sunburst",
-//     labels: ["Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura"],
-//     parents: ["", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", "Awan", "Eve" ],
-//     values:  [10, 14, 12, 10, 2, 6, 6, 4, 4],
-//     outsidetextfont: {size: 20, color: "#377eb8"},
-//     leaf: {opacity: 0.4},
-//     marker: {line: {width: 2}},
+am4core.ready(function() {
 
-    // type: "sunburst",
-    // labels: ['博士班', '多元專長', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', '日二技', 
-    // '日二技', '日二技', '日五專', '日五專', '日五專', '日五專', '日五專', '日五專', '日五專', '日四技', '日四技', '日四技', '日四技', 
-    // '日四技', '日四技', '日四技', '日四技', '日四技', '日四技', '碩士在職專班', '碩士在職專班', '碩士班', '碩士班', '碩士班', '碩士班', 
-    // '碩士班', '碩士班', '碩士班', '碩士班', '碩士班', '碩士班', '進二專', '進二專', '進二技', '進二技', '進二技', '進二技', '進二技', 
-    // '進二技', '進四技', '進四技', '進四技', '進四技', '進四技', '進四技'],
-    // parents: ['財經學院博士班', '多元專長培力課程', '二技企管', '二技創科', '二技商務', '二技商設', '二技應外', '二技數媒', '二技會資', 
-    // '二技菁英', '二技財稅', '二技財金', '二技資管', '五專企管', '五專國貿', '五專應外', '五專會計與資料科學科', '五專財稅', 
-    // '五專財金', '五專資管', '四技企管', '四技創科', '四技商務', '四技商設', '四技應外', '四技數媒', '四技會資', '四技財稅', 
-    // '四技財金', '四技資管', '企業管理系EMBA在職專班', '境外碩士在職班(春季)', '企業管理系碩士班', '創研所', '國際商務系碩士班', 
-    // '會計財稅碩士班', '會計資訊系碩士班', '財務金融系碩士班', '財政稅務系碩士班', '貿易實務法律暨談判碩士學位學程', '資研所', 
-    // '資訊管理系人工智慧與商業應用碩士', '進二專企管', '進二專外語', '進二技企管', '進二技應外', '進二技會資', '進二技財稅', 
-    // '進二技財金', '進二技資管', '進四技企管', '進四技商務', '進四技數媒', '進四技會資', '進四技財金', '進四技資管'],
-    // values:  [2, 2, 63, 57, 65, 85, 56, 2, 63, 8, 63, 72, 63, 100, 92, 88, 102, 75, 96, 67, 223, 78, 203, 95, 
-    //     72, 100, 189, 162, 89, 65, 41, 1, 27, 29, 29, 9, 18, 26, 15, 13, 17, 8, 223, 36, 216, 149, 87, 
-    //     86, 93, 137, 72, 58, 56, 58, 56, 107],
-// }];
-  
-// var layout = {
-//     margin: {l: 0, r: 0, b: 0, t: 0},
-//     width: 500,
-//     height: 400
-// };
-  
-  
-// Plotly.newPlot('snbrts', data, layout);
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
 
-d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/coffee-flavors.csv', function(err, rows){
-        function unpack(rows, key) {
-        return rows.map(function(row) {return row[key]})
-      }
-      
-        var data = [{
-              type: "sunburst",
-              maxdepth: 2,
-              ids: unpack(rows, 'ids'),
-              labels: unpack(rows, 'labels'),
-              parents: unpack(rows, 'parents'),
-              textposition: 'inside',
-              insidetextorientation: 'radial'
-        }]
-      
-        var layout = {margin: {l: 0, r: 0, b: 0, t:0},
-                      width: 500,
-                      height: 400
-    }
-      
-        Plotly.newPlot('snbrts', data, layout)
-      })
+// create chart
+var chart = am4core.create("snbrts", am4plugins_sunburst.Sunburst);
+chart.padding(0,0,0,0);
+chart.radius = am4core.percent(100);
+
+chart.data = [{
+  name: "博士班",
+  children: [
+    { name: "財經學院博士班", value: 2 }
+  ]
+},
+
+{
+    name: "多元專長",
+    children: [
+      { name: "多元專長培力課程", value: 2 }
+    ]
+  },
+
+{
+  name: "日二技",
+  children: [
+    { name: "二技企管", value: 63 },
+    { name: "二技創科", value: 57 },
+    { name: "二技商務", value: 65 },
+    { name: "二技商設", value: 85 },
+    { name: "二技應外", value: 56 },
+    { name: "二技數媒", value: 2 },
+    { name: "二技會資", value: 63 },
+    { name: "二技菁英", value: 8 },
+    { name: "二技財稅", value: 63 },
+    { name: "二技財金", value: 72 },
+    { name: "二技資管	", value: 63 }
+  ]
+},
+
+{
+    name: "日五專",
+    children: [
+      { name: "五專企管", value: 100 },
+      { name: "五專國貿", value: 92 },
+      { name: "五專應外", value: 88 },
+      { name: "五專會計與資料科學科", value: 102 },
+      { name: "五專財稅	", value: 75 },
+      { name: "五專財金", value: 96 },
+      { name: "五專資管", value: 67 }
+    ]
+  },
+
+  {
+    name: "日四技",
+    children: [
+      { name: "四技企管", value: 223 },
+      { name: "四技創科", value: 78 },
+      { name: "四技商務", value: 203 },
+      { name: "四技商設", value: 95 },
+      { name: "四技應外", value: 72 },
+      { name: "四技數媒", value: 100 },
+      { name: "四技會資", value: 189 },
+      { name: "四技財稅", value: 162 },
+      { name: "四技財金", value: 89 },
+      { name: "四技資管", value: 65 }
+    ]
+  },
+
+  {
+    name: "碩士在職專班",
+    children: [
+      { name: "企業管理系EMBA在職專班	", value: 41 },
+      { name: "境外碩士在職班(春季)	", value: 1 }
+    ]
+  },
+
+  {
+    name: "碩士班",
+    children: [
+      { name: "企業管理系碩士班", value: 27 },
+      { name: "創研所", value: 29 },
+      { name: "國際商務系碩士班", value: 29 },
+      { name: "會計財稅碩士班", value: 9 },
+      { name: "會計資訊系碩士班", value: 18 },
+      { name: "財務金融系碩士班", value: 26 },
+      { name: "財政稅務系碩士班", value: 15 },
+      { name: "貿易實務法律暨談判碩士學位學程", value: 13 },
+      { name: "資研所", value: 17 },
+      { name: "資訊管理系人工智慧與商業應用碩士", value: 8 }
+    ]
+  },
+
+  {
+    name: "進二專",
+    children: [
+      { name: "進二專企管", value: 223 },
+      { name: "進二專外語", value: 36 },
+      { name: "進二技企管", value: 216 },
+      { name: "進二技應外", value: 149 },
+      { name: "進二技會資", value: 87 },
+      { name: "進二技財稅", value: 86 },
+      { name: "進二技財金", value: 93 },
+      { name: "進二技資管", value: 137 }
+    ]
+  },
+
+  {
+    name: "進四技",
+    children: [
+      { name: "進四技企管", value: 72 },
+      { name: "進四技商務", value: 58 },
+      { name: "進四技數媒", value: 56 },
+      { name: "進四技數媒", value: 58 },
+      { name: "進四技財金", value: 56 },
+      { name: "進四技資管", value: 107 }
+    ]
+  },
+];
+
+chart.colors.step = 2;
+chart.fontSize = 11;
+chart.innerRadius = am4core.percent(10);
+
+// define data fields
+chart.dataFields.value = "value";
+chart.dataFields.name = "name";
+chart.dataFields.children = "children";
+
+
+var level0SeriesTemplate = new am4plugins_sunburst.SunburstSeries();
+level0SeriesTemplate.hiddenInLegend = true; // false
+chart.seriesTemplates.setKey("0", level0SeriesTemplate)
+
+// this makes labels to be hidden if they don't fit
+level0SeriesTemplate.labels.template.truncate = true;
+level0SeriesTemplate.labels.template.hideOversized = true;
+
+level0SeriesTemplate.labels.template.adapter.add("rotation", function(rotation, target) {
+  target.maxWidth = target.dataItem.slice.radius - target.dataItem.slice.innerRadius - 10;
+  target.maxHeight = Math.abs(target.dataItem.slice.arc * (target.dataItem.slice.innerRadius + target.dataItem.slice.radius) / 2 * am4core.math.RADIANS);
+
+  return rotation;
+})
+
+var level1SeriesTemplate = level0SeriesTemplate.clone();
+chart.seriesTemplates.setKey("1", level1SeriesTemplate)
+level1SeriesTemplate.fillOpacity = 0.75;
+level1SeriesTemplate.hiddenInLegend = true;
+
+var level2SeriesTemplate = level0SeriesTemplate.clone();
+chart.seriesTemplates.setKey("2", level2SeriesTemplate)
+level2SeriesTemplate.fillOpacity = 0.5;
+level2SeriesTemplate.hiddenInLegend = true;
+
+chart.legend = new am4charts.Legend();
+
+}); // end am4core.ready()
