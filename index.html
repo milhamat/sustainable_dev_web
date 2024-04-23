@@ -34,26 +34,26 @@
                     <h3>按學年、教育類型和學位劃分的學生分佈</h3> <!--- Student Distribution by Academic Year, Education Type, and Degree --->
                     <!-- <h3>Student Distribution for Academic Year</h3> -->
                     <div class="yearSnbrt">
-                    <select name="referrer" id="sunburstYearSelect">
-                        <option value="1">111</option>
-                        <option value="2">110</option>
-                        <option value="3">109</option>
-                        <option value="4">108</option>
-                        <option value="5">107</option>
-                        <option value="6">106</option>
-                        <option value="7">105</option>
-                        <option value="8">104</option>
-                        <option value="9">103</option>
-                        <option value="10">102</option>
-                        <option value="11">101</option>
-                        <option value="12">100</option>
-                        <option value="13">99</option>
-                        <option value="14">98</option>
-                        <option value="15">97</option>
-                        <option value="16">96</option>
-                        <option value="17">95</option>
+                    <select onchange="selectDataset(this.options[this.selectedIndex].value);" id="sunburstYearSelect">
+                        <option value="111">111</option>
+                        <option value="110">110</option>
+                        <option value="109">109</option>
+                        <option value="108">108</option>
+                        <option value="107">107</option>
+                        <option value="106">106</option>
+                        <option value="105">105</option>
+                        <option value="104">104</option>
+                        <option value="103">103</option>
+                        <option value="102">102</option>
+                        <option value="101">101</option>
+                        <option value="100">100</option>
+                        <option value="99">99</option>
+                        <option value="98">98</option>
+                        <option value="97">97</option>
+                        <option value="96">96</option>
+                        <option value="95">95</option>
                       </select>
-                      <button onclick="getOption()"> Generate </button>
+                      <!-- <button onclick="getOption()"> Generate </button> -->
                     </div>
                     <div id="snbrts"></div>
                 </div>

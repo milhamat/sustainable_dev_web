@@ -1,9 +1,21 @@
-function getOption() {
-  var e = document.getElementById("sunburstYearSelect");
-  var output = e.options[e.selectedIndex].text;
-  console.log('Select: ',output);
-  // document.querySelector('.output').textContent = output;
-};
+// sbrtList = ["oooSbrt","ootSbrt","oznSbrt","ozeSbrt","ozsvSbrt","ozsxSbrt",
+//               "ozfvSbrt","ozfrSbrt","oztrSbrt","oztwSbrt","ozoSbrt","ozzSbrt",
+//               "nnSbrt","neSbrt","nsvSbrt","nsxSbrt","nfvSbrt"]; 
+
+var selectYear ;
+
+// function getOption() {
+//   var e = document.getElementById("sunburstYearSelect");
+//   var output = e.options[e.selectedIndex].text;
+//   console.log('Select: ',output);
+//   console.log(typeof(output));
+//   selectYear = output;
+// };
+
+function selectDataset(set) {
+  console.log('Select: ',set);
+}
+
 
 // SUNBURST DATA VISUALIZATIONS
 am4core.ready(function() {
@@ -18,19 +30,12 @@ chart.padding(0,0,0,0);
 chart.radius = am4core.percent(100);
 
 // DATA
-sbrtList = ["oooSbrt","ootSbrt","oznSbrt","ozeSbrt","ozsvSbrt","ozsxSbrt",
-            "ozfvSbrt","ozfrSbrt","oztrSbrt","oztwSbrt","ozoSbrt","ozzSbrt",
-            "nnSbrt","neSbrt","nsvSbrt","nsxSbrt","nfvSbrt"];
-            // 
-
-// var e = document.getElementById("sunburstYearSelect");
-// var value = e.value;
-// var text = e.options[e.selectedIndex].text;
-
-// console.log('val: ',value);
-// console.log('txt: ',text);
+if (selectYear === '111'){
+  console.log('got the value 111')
+};
 
 chart.data = oooSbrt;//oooSbrt;
+
 
 chart.colors.step = 2;
 chart.fontSize = 11;
