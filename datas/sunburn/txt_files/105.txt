@@ -1,0 +1,87 @@
+NAME CODE: ozfv
+TOTAL ROW: 58
+TOTAL UNIQUE: 12
+{name: "二專雙軌企管科", value: 40},
+{name: "二專雙軌企管科(桃園)", value: 18},
+name: "二專雙軌"
+{name: "二技雙軌企管系", value: 65},
+{name: "二技雙軌商業設計系(桃園)", value: 60},
+{name: "二技雙軌商設系", value: 61},
+name: "二技雙軌"
+{name: "四技雙軌企管系", value: 87},
+name: "四技雙軌"
+{name: "夜二專會資", value: 14},
+{name: "夜二專財金", value: 14},
+name: "夜二專"
+{name: "跨境電商學位學程", value: 16},
+name: "學位學程"
+{name: "二技企管", value: 132},
+{name: "二技創科", value: 204},
+{name: "二技商務", value: 119},
+{name: "二技商設", value: 198},
+{name: "二技應外", value: 116},
+{name: "二技數媒", value: 174},
+{name: "二技會資", value: 125},
+{name: "二技菁英", value: 117},
+{name: "二技財稅", value: 124},
+{name: "二技財金", value: 115},
+{name: "二技資管", value: 122},
+name: "日二技"
+{name: "五專企管", value: 572},
+{name: "五專國貿", value: 523},
+{name: "五專應外", value: 467},
+{name: "五專會計與資料科學科", value: 17},
+{name: "五專會計資訊科", value: 461},
+{name: "五專菁英", value: 258},
+{name: "五專財稅", value: 519},
+{name: "五專財金", value: 480},
+{name: "五專資管", value: 426},
+name: "日五專"
+{name: "四技企管", value: 614},
+{name: "四技創科", value: 240},
+{name: "四技商務", value: 698},
+{name: "四技商設", value: 314},
+{name: "四技應外", value: 369},
+{name: "四技數媒", value: 274},
+{name: "四技會資", value: 647},
+{name: "四技財稅", value: 579},
+{name: "四技財金", value: 380},
+{name: "四技資管", value: 364},
+name: "日四技"
+{name: "企業管理系EMBA在職專班", value: 48},
+name: "碩士在職專班"
+{name: "企業管理系碩士班", value: 32},
+{name: "商研所", value: 28},
+{name: "國際商務系碩士班", value: 70},
+{name: "會計財稅碩士班", value: 48},
+{name: "財務金融系碩士班", value: 51},
+{name: "財政稅務系碩士班", value: 8},
+{name: "資研所", value: 36},
+name: "碩士班"
+{name: "進二技企管", value: 256},
+{name: "進二技國商", value: 327},
+{name: "進二技應外", value: 251},
+{name: "進二技會資", value: 186},
+{name: "進二技財稅", value: 150},
+{name: "進二技財金", value: 132},
+{name: "進二技資管", value: 160},
+name: "進二技"
+{name: "進四技企管", value: 307},
+{name: "進四技會資", value: 352},
+{name: "進四技財金", value: 153},
+{name: "進四技資管", value: 361},
+name: "進四技"
+
+    THE FORMAT IS
+    [{
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
+    },
+    {
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
+    },] 
