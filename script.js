@@ -1,3 +1,10 @@
+function getOption() {
+  var e = document.getElementById("sunburstYearSelect");
+  var output = e.options[e.selectedIndex].text;
+  console.log('Select: ',output);
+  // document.querySelector('.output').textContent = output;
+};
+
 // SUNBURST DATA VISUALIZATIONS
 am4core.ready(function() {
 
@@ -16,12 +23,12 @@ sbrtList = ["oooSbrt","ootSbrt","oznSbrt","ozeSbrt","ozsvSbrt","ozsxSbrt",
             "nnSbrt","neSbrt","nsvSbrt","nsxSbrt","nfvSbrt"];
             // 
 
-var e = document.getElementById("sunburstYearSelect");
-var value = e.value;
-var text = e.options[e.selectedIndex].text;
+// var e = document.getElementById("sunburstYearSelect");
+// var value = e.value;
+// var text = e.options[e.selectedIndex].text;
 
-console.log('val: ',value);
-console.log('txt: ',text);
+// console.log('val: ',value);
+// console.log('txt: ',text);
 
 chart.data = oooSbrt;//oooSbrt;
 
