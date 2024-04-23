@@ -13,6 +13,7 @@ var selectYear ;
 // };
 
 function selectDataset(set) {
+  selectYear = set;
   console.log('Select: ',set);
 }
 
@@ -30,11 +31,12 @@ chart.padding(0,0,0,0);
 chart.radius = am4core.percent(100);
 
 // DATA
-if (selectYear === '111'){
-  console.log('got the value 111')
-};
-
+// if (selectYear === '111'){
+//   console.log('got the value 111');
+// };
+// chart.dataSource.url = "./datas/sunburn/111_sbr.json";
 chart.data = oooSbrt;//oooSbrt;
+// chart.dataSource.updateCurrentData= true;
 
 
 chart.colors.step = 2;
