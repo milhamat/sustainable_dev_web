@@ -2,7 +2,7 @@
 //               "ozfvSbrt","ozfrSbrt","oztrSbrt","oztwSbrt","ozoSbrt","ozzSbrt",
 //               "nnSbrt","neSbrt","nsvSbrt","nsxSbrt","nfvSbrt"]; 
 
-var selectYear ;
+var selectYear="111";
 
 // function getOption() {
 //   var e = document.getElementById("sunburstYearSelect");
@@ -14,7 +14,13 @@ var selectYear ;
 
 function selectDataset(set) {
   selectYear = set;
-  console.log('Select: ',set);
+  console.log('Select: ',selectYear);
+  console.log(typeof(selectYear))
+
+}
+
+if (selectYear === "110"){
+  console.log('got the value 111');
 }
 
 
@@ -34,7 +40,7 @@ chart.radius = am4core.percent(100);
 // if (selectYear === '111'){
 //   console.log('got the value 111');
 // };
-// chart.dataSource.url = "./datas/sunburn/111_sbr.json";
+// chart.dataSource.url = "./datas/sunburn/111_sbr.json"; // can't call JSON files
 chart.data = oooSbrt;//oooSbrt;
 // chart.dataSource.updateCurrentData= true;
 
@@ -77,5 +83,5 @@ level2SeriesTemplate.hiddenInLegend = true;
 chart.legend = new am4charts.Legend();
 
 }); // end am4core.ready()
-
+// }
 // 
