@@ -71,6 +71,24 @@ header nav ul li{
     width: 420px;
     padding-left: 10%;
 }
+ /*-----this part is for blocker-----*/
+#blck{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+#bbb{
+    background-color: white;
+    height: 20px;
+    width: 500px;
+    padding-left: 10px;
+    z-index: 2;
+    position: relative;
+}
+/* -------------------------------- */
 
 .containerTwo{
     width: 65%;

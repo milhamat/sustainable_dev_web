@@ -311,6 +311,7 @@ chart.labels().format("{%name}");
 chart.level(2).labels().position("radial");
 // set the container id
 chart.container("snbrts");
+// chart.getCredits().setEnabled(false); // only happend after the license key
 // initiate drawing the chart
 chart.draw();
 
