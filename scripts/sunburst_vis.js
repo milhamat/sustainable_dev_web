@@ -206,76 +206,10 @@ var testDataTwo = [
 
 var selectYear;
 
-// function updateVis(data) {
-//     // create a sunburst chart and set the data
-//     var dataTree = anychart.data.tree(data);
-//     // var chart = anychart.sunburst(data, "as-tree");
-//     var chart = anychart.sunburst(dataTree, "as-tree"); // data
-
-//     // set the chart title
-//     // chart.title("Non-U.S. Born Oscar Winners for Acting");
-//     // format the tooltip
-//     chart.tooltip().useHtml(true);
-//     // style of text font
-//     chart.tooltip().format("<h5 style='font-size:14px; font-weight:400; margin: 0.25rem 0;'>{%name}</h5><h5 style='font-size:12px; font-weight:400; margin: 0.25rem 0;'>Total Oscars: {%value}</h5");
-//     // chart color palete
-//     chart.palette(['#345E80', '#00838F', '#00BFA5', '#ff6e40', '#d4e157', '#64B5F6']);
-//     // give the actual portion of slice
-//     chart.calculationMode("parent-dependent");
-    
-//     // create and configure a label for the center content
-//     let label = anychart.standalones.label();
-//     label.text("...");
-//     label.width("100%");
-//     label.height("100%");
-//     label.fontColor("#64B5F6");
-//     label.fontSize(12);
-//     label.fontWeight(600);
-//     label.hAlign("center");
-//     label.vAlign("middle");
-
-//     // set the center content
-//     chart.center().content(label);
-//     // set a space for the center content
-//     chart.innerRadius(50);
-//     // hide the world level
-//     chart.level(0).thickness("0%");
-//     // configure the label format
-//     chart.labels().format("{%name}");
-//     // apply the radial position
-//     chart.level(2).labels().position("radial");
-//     // set the container id
-//     chart.container("snbrts");
-//     // initiate drawing the chart
-//     chart.draw();
-    
-// }
-
-// function selectDataset(set) {
-//     selectYear = set;
-//     console.log('Select: ',selectYear);
-//     console.log(typeof(selectYear))
-//     if (selectYear === "110"){
-//         console.log('got the value 110');
-//         // updateVis(testDataTwo);
-//         // data=testDataTwo;
-//         // chart = anychart.sunburst(data, "as-tree")
-//         dataTree.clearData();
-//     }
-// }
-
-// updateVis(data);
-
 // create a sunburst chart and set the data
 // var dataTree = anychart.data.tree(data);
 var chart = anychart.sunburst(oooSbrt, "as-tree");
 // var chart = anychart.sunburst(dataTree, "as-tree"); // data
-
-// preloader = anychart.ui.preloader();
-// render preloader to the DOM
-// preloader.render();
-// show preloader before working with the chart
-// preloader.visible(true);
 
 // set the chart title
 // chart.title("Non-U.S. Born Oscar Winners for Acting");
@@ -302,7 +236,7 @@ label.vAlign("middle");
 // set the center content
 chart.center().content(label);
 // set a space for the center content
-chart.innerRadius(50);
+chart.innerRadius(40);
 // hide the world level
 chart.level(0).thickness("0%");
 // configure the label format
@@ -327,6 +261,13 @@ function selectDataset(set) {
   selectYear = set;
   console.log('Select: ',selectYear);
   console.log(typeof(selectYear))
+  if (selectYear === "111"){
+    console.log('got the value 111');
+    // updateVis(testDataTwo);
+    // data=testDataTwo;
+    // chart = anychart.sunburst(data, "as-tree")
+    chart.data(oooSbrt);
+  }
   if (selectYear === "110"){
       console.log('got the value 110');
       // updateVis(testDataTwo);

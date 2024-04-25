@@ -42,4 +42,48 @@ name: "進四技"
         children: [
         { name: "...", value: 2 }
         ]
+    },] NAME CODE: ne
+TOTAL ROW: 22
+TOTAL UNIQUE: 6
+{name: "夜二專外語", value: 2},
+{name: "夜二專財金", value: 2},
+name: "夜二專"
+{name: "五專企管", value: 74},
+{name: "五專國貿", value: 72},
+{name: "五專應外", value: 202},
+{name: "五專會統", value: 74},
+{name: "五專會計資訊科", value: 12},
+{name: "五專財稅", value: 78},
+{name: "五專財金", value: 102},
+{name: "五專資管", value: 78},
+name: "日五專"
+{name: "四技企管", value: 2},
+{name: "四技商務", value: 16},
+{name: "四技會資", value: 14},
+{name: "四技財稅", value: 11},
+{name: "四技財金", value: 4},
+{name: "四技資管", value: 16},
+name: "日四技"
+{name: "資科所", value: 4},
+name: "碩士班"
+{name: "進二技國商", value: 2},
+{name: "進二技會資", value: 5},
+name: "進二技"
+{name: "進四技企管", value: 30},
+{name: "進四技會資", value: 42},
+{name: "進四技資管", value: 71},
+name: "進四技"
+
+    THE FORMAT IS
+    [{
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
+    },
+    {
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
     },] 

@@ -17,4 +17,23 @@ name: "日五專"
         children: [
         { name: "...", value: 2 }
         ]
+    },] NAME CODE: nfv
+TOTAL ROW: 2
+TOTAL UNIQUE: 1
+{name: "五專應外", value: 2},
+{name: "五專資管", value: 2},
+name: "日五專"
+
+    THE FORMAT IS
+    [{
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
+    },
+    {
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
     },] 

@@ -24,4 +24,30 @@ name: "進四技"
         children: [
         { name: "...", value: 2 }
         ]
+    },] NAME CODE: nsx
+TOTAL ROW: 7
+TOTAL UNIQUE: 3
+{name: "五專國貿", value: 2},
+{name: "五專應外", value: 4},
+{name: "五專財稅", value: 4},
+{name: "五專資管", value: 2},
+name: "日五專"
+{name: "四技資管", value: 2},
+name: "日四技"
+{name: "進四技會資", value: 2},
+{name: "進四技資管", value: 2},
+name: "進四技"
+
+    THE FORMAT IS
+    [{
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
+    },
+    {
+        name: "...",
+        children: [
+        { name: "...", value: 2 }
+        ]
     },] 
