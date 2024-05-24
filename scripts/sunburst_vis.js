@@ -1,9 +1,7 @@
 var data = [
     {
-      //name: "World", value: 115, children: [
       name: " ", value: 111, children: [
         {
-          //name: "Europe", value: 87, children: [
           name: "Europe", value: 87, 
           children: [
             {name: "England", value: 53},
@@ -46,10 +44,8 @@ var data = [
 
 var testDataTwo = [
     {
-      //name: "World", value: 115, children: [
       name: "進二技", value: 111, children: [
         {
-          //name: "Europe", value: 87, children: [
           name: "博士班", value: 87, 
           children: [
             {name: "企業管理系碩士班", value: 53},
@@ -92,7 +88,6 @@ var testDataTwo = [
 
   var oooSbrt = [
     {
-      //name: "World", value: 115, children: [
       name: "", value: 4164, children: [
         {
           name: "博士班", value: 2, 
@@ -208,6 +203,7 @@ var selectYear;
 
 // create a sunburst chart and set the data
 // var dataTree = anychart.data.tree(data);
+
 var chart = anychart.sunburst(oooSbrt, "as-tree");
 // var chart = anychart.sunburst(dataTree, "as-tree"); // data
 
@@ -255,31 +251,20 @@ chart.draw();
 //   console.log('Time out');
 // }, 1500);
 
-// preloader.visible(false);
-
 function selectDataset(set) {
   selectYear = set;
   console.log('Select: ',selectYear);
   console.log(typeof(selectYear))
   if (selectYear === "111"){
     console.log('got the value 111');
-    // updateVis(testDataTwo);
-    // data=testDataTwo;
-    // chart = anychart.sunburst(data, "as-tree")
     chart.data(oooSbrt);
   }
   if (selectYear === "110"){
       console.log('got the value 110');
-      // updateVis(testDataTwo);
-      // data=testDataTwo;
-      // chart = anychart.sunburst(data, "as-tree")
       chart.data(testDataTwo);
   }
   if (selectYear === "109"){
   console.log('got the value 111');
-  // updateVis(testDataTwo);
-  // data=testDataTwo;
-  // chart = anychart.sunburst(data, "as-tree")
   chart.data(data);
 }
 }
